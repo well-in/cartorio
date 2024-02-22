@@ -107,6 +107,12 @@ int deletar()
 	}	
 }
 
+int sair() 
+{
+	printf("Obrigado por utilizar o sistema.\n");
+	return 0;
+}
+
 int main(){
 	int option = 0;
 	int restart = 1;
@@ -121,7 +127,8 @@ int main(){
 		printf("Escolha a opção desejada no menu:\n\n");	
 		printf("\t 1 - Registrar Nomes: \n");
 		printf("\t 2 - Consultar Nomes: \n");
-		printf("\t 3 - Deletar Nomes: \n\n");
+		printf("\t 3 - Deletar Nomes: \n");
+		printf("\t 4 - Sair do sistema: \n\n");
 		
 		printf("Opção: ");	
 		scanf("%d", &option);
@@ -140,6 +147,10 @@ int main(){
 				
 			case 3:
 				deletar();
+				break;
+				
+			case 4:
+				sair();
 				break;
 				
 			default:
