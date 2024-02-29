@@ -107,12 +107,6 @@ int deletar()
 	}	
 }
 
-int sair() 
-{
-	printf("Obrigado por utilizar o sistema.\n");
-	return 0;
-}
-
 int main(){
 	int option = 0;
 	int restart = 1;
@@ -160,7 +154,8 @@ int main(){
 					break;
 					
 				case 4:
-					sair();
+					printf("Obrigado por utilizar o sistema.\n");
+					return 0;
 					break;
 					
 				default:
